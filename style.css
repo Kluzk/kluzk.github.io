@@ -11,7 +11,7 @@ body {
 	font-family: sans-serif;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	body {
 		margin: 0 15%;
     	font-size: 1.2em;
@@ -33,7 +33,7 @@ div, header, footer, .content-wrapper {
 		repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	.wrapper {
 		background: none;
 		background-color: cornsilk;
@@ -103,7 +103,7 @@ div, header, footer, .content-wrapper {
 				0 0 2em rgb(216, 191, 216);
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	.content-wrapper {
 		background: none;
 		box-shadow: none;
@@ -114,7 +114,7 @@ div, header, footer, .content-wrapper {
 	display: none;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	.content-left  {
 		float: left;
 		width: 30%;
@@ -156,7 +156,7 @@ div, header, footer, .content-wrapper {
 	text-shadow: 0 0 10px deepskyblue;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	.content-right {
 		float: right;
 		width: 60%;
@@ -179,7 +179,7 @@ div, header, footer, .content-wrapper {
 	background-color: lightblue;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	.footer-conteiner {
 		position: relative;
 	}
@@ -221,7 +221,7 @@ div, header, footer, .content-wrapper {
 	text-decoration: none;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 64em) {
 	.contact {
 		float: right;
 	}
