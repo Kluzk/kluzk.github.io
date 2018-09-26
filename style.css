@@ -11,7 +11,7 @@ body {
 	font-family: sans-serif;
 }
 
-@media screen and (min-width: 64em) and not (min-resolution: 2dppx) {
+@media screen and (min-width: 64em) {
 	body {
 		margin: 0 15%;
     	font-size: 1.2em;
