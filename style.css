@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/* Main style */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+@media screen and (min-width: 50em) {
+	body {
+		margin: 0 15%;
+    	font-size: 1.2em;
+		background:
+			repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
+	}
+}
+
+div, header, footer, .content-wrapper {
+	display: block;
+}
+
+.wrapper {
+	height: 100%;
+	position: relative;
+	margin: 0;
+	background-color: cornsilk;
+	background:
+		repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
+}
+
+@media screen and (min-width: 50em) {
+	.wrapper {
+		background: none;
+		background-color: cornsilk;
+		background-color: rgba(216, 191, 216, 0.8);
+	}
+}
+
+.sh {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* Top panel style */
+.top-panel-navigation {
+	background-color: linen;
+    color: black;
+    overflow: hidden;
+}
+
+.top-panel-navigation ul {
+	overflow: hidden;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	}
+
+.top-panel-navigation ul li {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 1.2em;
+	float: left;
+}
+
+.top-panel-navigation ul li a {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+.top-panel-bottom {
+	width: auto;
+	padding: 0.5em 1em;
+    border: none;
+    float: left;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.top-panel-navigation .active {
+	color: white;
+    background-color: black;   
+}
+
+.top-panel-hover-bottom:hover {
+    color: cyan;
+    background-color: darkslateblue;
+}
+
+/* Content style */
+
+.content-wrapper {
+	overflow: hidden;
+	height: auto;
+	padding: 1px 1em .5em 1em;
+	margin: 1em;
+	border-radius: 1em;
+	background-color: rgba(216, 191, 216, 0.8);
+	box-shadow: 0 0 1.5em rgb(216, 191, 216),
+				0 0 2em rgb(216, 191, 216);
+}
+
+@media screen and (min-width: 50em) {
+	.content-wrapper {
+		background: none;
+		box-shadow: none;
+	}
+}
+
+.content-left {
+	display: none;
+}
+
+@media screen and (min-width: 50em) {
+	.content-left  {
+		float: left;
+		width: 30%;
+	}
+}
+
+.image-wrapper {
+	padding: 1.5em;
+}
+
+.image-wrapper img {
+	background-color: cornsilk;
+
+}
+
+.content-right {
+	float: none;
+	font-family: Verdana, sans-serif;
+	color: midnightblue;
+	line-height: 2em;
+	text-align: center;
+}
+
+.content-right a, .content-right a:link, .content-right a:visited {
+	text-decoration: none;
+	color: gold;
+	text-transform: uppercase;
+	background-color: indigo;
+	padding: .5em;
+	border-radius: 3.75em;
+	transition: 0.3s background-color,
+				0.3s color,
+				0.3s text-shadow;
+}
+
+.content-right a:hover {
+	background-color: midnightblue;
+	color: deepskyblue;
+	text-shadow: 0 0 10px deepskyblue;
+}
+
+@media screen and (min-width: 50em) {
+	.content-right {
+		float: right;
+		width: 60%;
+		text-align: justify;
+	}
+}
+
+.content-right h1 {
+	
+}
+
+/* Footer style */
+.footer-conteiner {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-top: auto;
+	width: 100%;
+	overflow: hidden;
+	background-color: lightblue;
+}
+
+@media screen and (min-width: 50em) {
+	.footer-conteiner {
+		position: relative;
+	}
+}
+
+.footer-conteiner h5 {
+	color: grey;
+	text-transform: uppercase;
+}
+
+.footer-conteiner h6, .footer-conteiner p, .contact ul li a, .about p  {
+	font-size: 0.75em;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+.credits, .contact, .about {
+	max-width: 20%;
+	margin: 1.5em 2em;
+}
+
+.credits, .about, .contact {
+	float: left;
+}
+
+.credits span {
+	font-size: 1em;
+}
+
+.contact ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.contact ul li a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 50em) {
+	.contact {
+		float: right;
+	}
+}
