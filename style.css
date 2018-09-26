@@ -179,12 +179,6 @@ div, header, footer, .content-wrapper {
 	background-color: lightblue;
 }
 
-@media screen and (min-width: 64em) {
-	.footer-conteiner {
-		position: relative;
-	}
-}
-
 .footer-conteiner h5 {
 	color: grey;
 	text-transform: uppercase;
