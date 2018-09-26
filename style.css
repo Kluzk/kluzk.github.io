@@ -14,9 +14,7 @@ body {
 @media screen and (min-width: 64em) {
 	body {
 		margin: 0 15%;
-    	font-size: 1.2em;
-		background:
-			repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
+		background: repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
 	}
 }
 
@@ -29,8 +27,7 @@ div, header, footer, .content-wrapper {
 	position: relative;
 	margin: 0;
 	background-color: cornsilk;
-	background:
-		repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
+	background: repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
 }
 
 @media screen and (min-width: 64em) {
