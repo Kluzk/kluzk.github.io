@@ -1,21 +1,18 @@
-@charset "UTF-8";
-
-/* Main style */
-html, body {
-	height: 100%;
+* {
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	font-family: sans-serif;
+/* Main style */
+html, body {
+	min-height: 100%;
+	height: 1px;
 }
 
-@media screen and (min-width: 64em) {
-	body {
-		margin: 0 15%;
-		background: repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
-	}
+body {
+	font-family: sans-serif;
+	background:
+		repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, #BDB76B 4%, #BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
 }
 
 div, header, footer, .content-wrapper {
@@ -25,17 +22,8 @@ div, header, footer, .content-wrapper {
 .wrapper {
 	height: 100%;
 	position: relative;
-	margin: 0;
 	background-color: cornsilk;
-	background: repeating-linear-gradient(30deg, #FF6347 0, #FF6347 2%, #663399 2%, #663399 4%, /*#FFFACD*/#BDB76B 4%, /*#FFFACD*/#BDB76B 6%, #FA8072 6%, #FA8072 8%, #32CD32 8%, #32CD32 10%, #C71585 10%, #C71585 12%);
-}
-
-@media screen and (min-width: 64em) {
-	.wrapper {
-		background: none;
-		background-color: cornsilk;
-		background-color: rgba(216, 191, 216, 0.8);
-	}
+	background-color: rgba(216, 191, 216, 0.7);
 }
 
 .sh {
@@ -43,17 +31,19 @@ div, header, footer, .content-wrapper {
 }
 
 /* Top panel style */
+header {
+	height: 5vh;
+}
+
 .top-panel-navigation {
 	background-color: linen;
-    color: black;
-    overflow: hidden;
+	color: black;
+	overflow: hidden;
 }
 
 .top-panel-navigation ul {
 	overflow: hidden;
 	list-style-type: none;
-	padding: 0;
-	margin: 0 auto;
 	}
 
 .top-panel-navigation ul li {
@@ -69,53 +59,33 @@ div, header, footer, .content-wrapper {
 	}
 
 .top-panel-bottom {
-	width: auto;
-	padding: 0.5em 1em;
-    border: none;
-    float: left;
-    transition-property: background-color;
-    transition-duration: 0.3s;
+	width: 5em;
+	text-align: center;
+	padding: .375em 1em;
+	border: none;
+	float: left;
+	transition-property: background-color;
+	transition-duration: 0.3s;
 }
 
 .top-panel-navigation .active {
 	color: white;
-    background-color: black;   
+	background-color: black;   
 }
 
 .top-panel-hover-bottom:hover {
-    color: cyan;
-    background-color: darkslateblue;
+	color: cyan;
+	background-color: darkslateblue;
 }
 
 /* Content style */
-
 .content-wrapper {
+	min-height: 85%;
 	overflow: hidden;
-	height: auto;
-	padding: 1px 1em .5em 1em;
-	margin: 1em;
-	border-radius: 1em;
-	background-color: rgba(216, 191, 216, 0.8);
-	box-shadow: 0 0 1.5em rgb(216, 191, 216),
-				0 0 2em rgb(216, 191, 216);
-}
-
-@media screen and (min-width: 64em) {
-	.content-wrapper {
-		background: none;
-		box-shadow: none;
-	}
 }
 
 .content-left {
 	display: none;
-}
-
-@media screen and (min-width: 64em) {
-	.content-left  {
-		float: left;
-		width: 30%;
-	}
 }
 
 .image-wrapper {
@@ -128,6 +98,7 @@ div, header, footer, .content-wrapper {
 }
 
 .content-right {
+	padding: 1em;
 	float: none;
 	font-family: Verdana, sans-serif;
 	color: midnightblue;
@@ -153,46 +124,30 @@ div, header, footer, .content-wrapper {
 	text-shadow: 0 0 10px deepskyblue;
 }
 
-@media screen and (min-width: 64em) {
-	.content-right {
-		float: right;
-		width: 60%;
-		text-align: justify;
-	}
-}
-
-.content-right h1 {
-	
-}
-
 /* Footer style */
-.footer-conteiner {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin-top: auto;
+footer {
+	min-height: 10%;
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 	background-color: lightblue;
 }
 
-.footer-conteiner h5 {
+.footer-conteiner {
 	color: grey;
 	text-transform: uppercase;
 }
 
 .footer-conteiner h6, .footer-conteiner p, .contact ul li a, .about p  {
-	font-size: 0.75em;
+	font-size: .75em;
 	color: black;
 	font-weight: bold;
-	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
 }
 
 .credits, .contact, .about {
-	max-width: 20%;
-	margin: 1.5em 2em;
+	padding: 1em 2em 0;
 }
 
 .credits, .about, .contact {
@@ -213,6 +168,21 @@ div, header, footer, .content-wrapper {
 }
 
 @media screen and (min-width: 64em) {
+	body {
+		margin: 0 15%;
+	}
+	.content-wrapper {
+		background: none;
+	}
+	.content-left  {
+		float: left;
+		width: 30%;
+	}
+	.content-right {
+		float: right;
+		width: 60%;
+		text-align: justify;
+	}
 	.contact {
 		float: right;
 	}
